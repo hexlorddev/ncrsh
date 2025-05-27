@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ncrsh"
+version = "0.1.0"
+description = "The Ultimate Deep Learning Stack — Transformers, Tokenizers, and Torch in One"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Dineth Nethsara"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.21.0",
+    "typing-extensions>=4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "black>=22.0",
+    "isort>=5.0",
+    "mypy>=0.900",
+    "pytest-cov>=3.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/dinethnethsara/ncrsh"
+Documentation = "https://ncrsh.readthedocs.io"
+Repository = "https://github.com/dinethnethsara/ncrsh"
+Issues = "https://github.com/dinethnethsara/ncrsh/issues"
